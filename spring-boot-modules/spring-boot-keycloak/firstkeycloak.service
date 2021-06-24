@@ -1,0 +1,10 @@
+[Unit]
+Description=First Keycloak Sample
+
+[Service]
+ExecStart=/usr/share/sample//first-keycloak/spring-boot-modules/spring-boot-keycloak/start.sh
+Restart=always
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
